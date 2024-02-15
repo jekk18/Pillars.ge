@@ -13557,6 +13557,49 @@ a:hover, a:active {
   color: white;
 }
 
+.lang-box {
+  position: relative;
+  display: flex;
+  min-width: 60px;
+  height: 23px;
+}
+.lang-box ul {
+  margin: 0;
+  position: absolute;
+  min-width: 60px; 
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 30px;
+  overflow: hidden;
+}
+.lang-box ul li {
+  list-style: none;
+}
+.lang-box ul li a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  width: fit-content;
+  text-decoration: none;
+}
+.lang-box ul li.active a{
+  font-weight: 600;
+}
+.lang-vector {
+  position: absolute;
+  right: 0;
+  top: -2px;
+  z-index: 99;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.active-lang-box ul {
+  max-height: 100px !important;
+}
+.active-lang-box .lang-vector  {
+  transform: rotate(180deg);
+}
 
 /*
 ====================================
